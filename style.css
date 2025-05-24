@@ -1,0 +1,176 @@
+* {
+  margin: 15px;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html {
+  background-color: black;
+  color: beige;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  position: fixed;
+  backdrop-filter: blur(30px);
+  width: 100%;
+  top: 0;
+}
+.logo {
+  padding-right: 300px;
+  font-size: 40px;
+  font-weight: bold;
+  border: solid 5px beige;
+  border-radius: 10px;
+}
+.links li {
+  display: inline-block;
+  gap: 5px;
+  padding: 3px;
+}
+.links li a {
+  color: beige;
+  font-size: 25px;
+  text-decoration: none;
+  width: 10px;
+
+  transition: all 0.7s ease;
+}
+.links li a:hover {
+  background-color: beige;
+  color: black;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding-top: 100px;
+}
+.heroimg img {
+  border-radius: 300px;
+  padding-left: 200px;
+}
+.herocontent {
+  display: flex;
+  flex-direction: column;
+}
+.hero h1 {
+  padding-right: 300px;
+  float: right;
+  top: 0;
+  font-size: 35px;
+  padding: 20px;
+  text-decoration: underline;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.hero h1:hover {
+  background-color: beige;
+  color: black;
+  transition: all 0.5s ease;
+}
+.herocontent p {
+  text-align: center;
+  font-size: 25px;
+  padding-right: 30px;
+}
+.color {
+  background-color: beige;
+  height: 10px;
+}
+.abouth1 {
+  text-align: center;
+}
+.aboutcontent p {
+  text-align: center;
+  font-size: 25px;
+}
+.color1 {
+  height: 5px;
+  background-color: beige;
+}
+.projects h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.projectscontent ul {
+  text-align: center;
+}
+.projectscontent li {
+  list-style: none;
+  gap: 30px;
+}
+.projectscontent li i {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+.projectscontent li a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.projectscontent li a:hover {
+  background-color: beige;
+  color: black;
+  transition: all 0.5s ease;
+}
+.projectscontent li p {
+  font-size: 20px;
+}
+.blogh1 {
+  text-decoration: underline 3px;
+}
+.blogcontent {
+  font-size: 20px;
+}
+.contacth1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.contactcontent {
+  display: flex;
+}
+.contactcontent label {
+  font-size: 20px;
+}
+.contactcontent input {
+  background-color: beige;
+  height: 25px;
+  font-size: 20px;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.contactcontent ::placeholder {
+  text-align: center;
+  text-decoration: none;
+}
+.submit {
+  text-align: center;
+}
+.color2 {
+  background-color: beige;
+  height: 2px;
+}
+footer p {
+  text-align: center;
+  font-size: 25px;
+}
+.footer p::after {
+  content: "";
+  width: 0;
+  display: block;
+  background-color: beige;
+  height: 3px;
+  transition: width 1s ease;
+}
+.footer p:hover::after {
+  width: 100%;
+}
