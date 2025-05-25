@@ -19,6 +19,7 @@ html {
   backdrop-filter: blur(30px);
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 .logo {
   padding-right: 300px;
@@ -49,6 +50,20 @@ html {
   justify-content: center;
   gap: 200px;
   padding-top: 100px;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.herocontent {
+  animation: 1.5s fadeInUp;
 }
 .heroimg img {
   border-radius: 300px;
@@ -128,6 +143,20 @@ html {
 }
 .blogcontent {
   font-size: 20px;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.blogcontent {
+  animation: 2.5s fadeInUp;
 }
 .contacth1 {
   text-align: center;
