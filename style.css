@@ -12,13 +12,15 @@ html {
   font-style: normal;
 }
 .navbar {
+  margin: 0;
   display: flex;
   justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 1px;
   position: fixed;
   backdrop-filter: blur(30px);
   width: 100%;
   top: 0;
+
   z-index: 1;
 }
 .logo {
@@ -65,6 +67,18 @@ html {
 .herocontent {
   animation: 1.5s fadeInUp;
 }
+/* start */
+.herocontent {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.herocontent.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* end */
 .heroimg img {
   border-radius: 300px;
   padding-left: 200px;
@@ -104,6 +118,25 @@ html {
   text-align: center;
   font-size: 25px;
 }
+.aboutcontent h1 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px;
+}
+.aboutcontent ul {
+  text-align: center;
+  justify-content: center;
+}
+.aboutcontent li {
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 26px;
+}
+.aboutcontent li i {
+  font-size: 40px;
+}
+
 .color1 {
   height: 5px;
   background-color: beige;
@@ -119,6 +152,7 @@ html {
   list-style: none;
   gap: 30px;
 }
+
 .projectscontent li i {
   color: white;
   font-size: 30px;
@@ -144,7 +178,7 @@ html {
 .blogcontent {
   font-size: 20px;
 }
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
   0% {
     transform: translateY(100%);
     opacity: 0;
@@ -157,7 +191,18 @@ html {
 
 .blogcontent {
   animation: 2.5s fadeInUp;
+} */
+.blogcontent {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 3s ease-out, transform 3s ease-out;
 }
+
+.blogcontent.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .contacth1 {
   text-align: center;
   text-decoration: underline;
@@ -181,12 +226,83 @@ html {
   text-align: center;
   text-decoration: none;
 }
+.contactcontent {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.contactcontent.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .submit {
   text-align: center;
 }
+
 .color2 {
   background-color: beige;
   height: 2px;
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+.insta i {
+  font-size: 40px;
+  padding: 5px;
+}
+.insta i:hover {
+  color: #833ab4;
+  background-color: #833ab4;
+  border-radius: 10px;
+}
+.insta a {
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.insta a:hover {
+  background-color: #833ab4;
+  color: white;
+}
+.linkedin i {
+  font-size: 40px;
+  padding: 5px;
+}
+.linkedin i:hover {
+  color: white;
+  background-color: #0077b5;
+  border-radius: 10px;
+}
+.linkedin a {
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.linkedin a:hover {
+  background-color: #0077b5;
+}
+.github i {
+  font-size: 40px;
+  padding: 5px;
+}
+.github i:hover {
+  color: white;
+  background-color: blue;
+  border-radius: 20px;
+}
+.github a {
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.github a:hover {
+  background-color: blue;
+  color: white;
 }
 footer p {
   text-align: center;
@@ -199,6 +315,54 @@ footer p {
   background-color: beige;
   height: 3px;
   transition: width 1s ease;
+}
+.h1effecta::after {
+  background-color: beige;
+  width: 0;
+  height: 3px;
+  content: "";
+  display: block;
+
+  transition: width 3s ease;
+}
+.h1effecta:hover::after {
+  width: 37%;
+}
+.h1effect2::after {
+  background-color: beige;
+  width: 0;
+  height: 3px;
+  content: "";
+  display: block;
+
+  transition: width 3s ease;
+}
+.h1effect2:hover::after {
+  width: 15%;
+}
+.h1effect3::after {
+  background-color: beige;
+  width: 0;
+  height: 3px;
+  content: "";
+  display: block;
+
+  transition: width 3s ease;
+}
+.h1effect3:hover::after {
+  width: 55%;
+}
+.h1effect4::after {
+  background-color: beige;
+  width: 0;
+  height: 3px;
+  content: "";
+  display: block;
+
+  transition: width 3s ease;
+}
+.h1effect4:hover::after {
+  width: 20%;
 }
 .footer p:hover::after {
   width: 100%;
