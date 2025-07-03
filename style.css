@@ -13,6 +13,7 @@ html {
 }
 .navbar {
   margin: 0;
+  font-size: 15px;
   display: flex;
   justify-content: space-around;
   padding-top: 1px;
@@ -51,8 +52,9 @@ html {
   display: flex;
   justify-content: center;
   gap: 200px;
-  padding-top: 100px;
+  padding-top: 200px;
 }
+
 @keyframes fadeInUp {
   0% {
     transform: translateY(100%);
